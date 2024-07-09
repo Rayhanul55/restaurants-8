@@ -1,0 +1,303 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+body{
+    background-color: rgb(231, 213, 196);
+}
+img{
+    width: 100%;
+}
+.header-hr{
+    display: none;
+}
+.card{
+    border: 1px solid;
+    box-shadow: 1rem 1rem 1.4rem gray;
+    transition: 0.3s;
+    padding-bottom: 5px;
+}
+.card:hover{
+    transform: scale(1.05);
+}
+.btn{
+    border: none;
+    padding: 5px;
+    transition: 0.3s;
+    display: block;
+    margin: auto;
+    width: 90%;
+}
+.btn:hover{
+    color: rgb(183, 210, 30);
+    background-color: chocolate;
+}
+.name{
+    background-color: chocolate;
+    text-align: center;
+    margin-top: -4px;
+    margin-bottom: 0.5rem;
+}
+/* common code endsa  */
+
+/* header start  */
+#header{
+    /* background-color: rgb(206, 191, 177); */
+    height: 20vh;
+}
+.header-top-menu{
+    display: flex;
+    flex: 4;
+}
+.nav-head-name{
+    padding: 10px;
+    flex: 1;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+}
+.nav-head-name span{
+    color: rgb(39, 135, 148);
+}
+.nav-menu{
+    flex: 2;
+    padding: 20px;
+}
+.nav-menu ul{
+    display: flex;
+    justify-content: space-around;
+}
+.nav-menu ul li a{
+    color: #000000;
+    font-size: 1.2rem;
+}
+.nav-menu ul li a:hover{
+    color: #5a80fd;
+    text-decoration: underline;
+}
+.register{
+    flex: 1;
+    padding: 20px;
+}
+.register a{
+    font-size: 1.3rem;
+    margin: 0 1rem;
+    padding: 5px;
+    color: rgb(170, 52, 37);
+}
+.register a:hover{
+    background-color: rgb(233, 101, 48);
+    color: #fff;
+    border-radius: 5px;
+}
+/* header ends  */
+
+
+
+/* main start  */
+/* main banner start  */
+#main{
+    margin: 100px 20px;
+}
+.search-food{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.btn-s{
+    display: inline;
+    margin-left: -2px;
+    border: 1px solid chocolate;
+    width: auto;
+}
+.glass{
+    padding: 3px;
+}
+.search{
+    padding: 5px;
+}
+.food-menu-item{
+    display: flex;
+    flex: 4;
+    gap: 3rem;
+}
+.food-demo-list{
+    flex: 1;
+    border-right: 1px solid;
+}
+.food-demo-img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.food-demo, .demo-2, .demo-3, .demo-4{
+    position: relative;
+    margin: 30px 0;
+}
+.food-demo h3, .h-2, .h-3, .h-4{
+    position: absolute;
+    top: 30px;
+    left: 80px;
+}
+.food-item{
+    flex: 3;
+}
+.food-item-list{
+    display: flex;
+    flex: 4;
+    gap: 3rem;
+}
+.food-item-img{
+    height: 150px;
+}
+.food-item-card-1{
+    flex: 1;
+}
+.food-item-card-2{
+    flex: 1;
+}
+.food-item-card-3{
+    flex: 1;
+}
+.food-item-card-4{
+    flex: 1;
+}
+/* main banner endas */
+/* main neds  */
+
+
+/* footer start  */
+#footer{
+    background: #000;
+}
+.contuct-logo{
+    display: flex;
+    padding: 2rem 0;
+    gap: 3rem;
+    justify-content: center;
+}
+.contuct-logo a{
+    color: #000;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.contuct-logo a:hover{
+    background-color: #3b76e4;
+}
+.contuct-logo a i{
+    font-size: 1.3rem;
+}
+#footer .nav-menu ul li a{
+    color: white;
+}
+#footer h5{
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem;
+}
+/* footer ends  */
+
+
+
+
+/* responcib  */
+@media (max-width:970px) {
+    .food-item-list{
+        flex-direction: column;
+    }
+    .food-item-img{
+        height: auto;
+    }
+    .food-item-list{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+
+    .nav-head-name{
+        text-align: center;
+        display: block;
+    }
+    .nav-menu ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    .register{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width:640px) {
+    #header{
+        height: 60vh;
+    }
+    .header-hr{
+        display: block;
+    }
+    .header-top-menu{
+        flex-direction: column;
+    }
+    .nav-menu ul{
+        gap: 1.7rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .register{
+        margin: auto;
+    }
+    .nav-head-name{
+        text-align: center;
+    }
+    .nain-banner-section{
+        flex-direction: column;
+    }
+    .food-img-banner{
+        display: none;
+    }
+    .main-header-details .btn{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .food-menu-item{
+        flex-direction: column;
+    }
+    .food-demo-list{
+        border: none;
+        text-align: end;
+        margin-right: 10%;
+    }
+    .food-item-list{
+        flex-direction: column;
+    }
+    .food-item-img{
+        height: auto;
+    }
+    .btn{
+        display: block;
+        margin: auto;
+        width: 70%;
+    }
+    .btn-s{
+        display: inline;
+        width: auto;
+    }
+    .card{
+        width: 80%;
+        margin: auto;
+    }
+}
